@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 align="center">WELCOME TO MUSIC PLAYER</h1>
+	<table>
+	<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	</tr>
+	</table>
+	
+	<a href=""> <input type="submit" value="PLAY"> </a>
+	<a href=""> <input type="submit" value="ADD"> </a>
+	<a href=""> <input type="submit" value="SEARCH"> </a>
+	<a href=""> <input type="submit" value="UPDATE"> </a>
+	<a href=""> <input type="submit" value="DELETE"> </a>
+	
+</body>
+</html>

@@ -1,0 +1,51 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ page import="java.sql.*"%>
+<%@ page import = "java.util.*" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<%!
+	public static Connection connection;
+	public static Statement statement;
+	public static PreparedStatement preparedStatement;
+	public static int result;
+	public static ResultSet resultSet;
+	public static String driver = "com.mysql.cj.jdbc.Driver";
+	public static String dburl = "jdbc:mysql://localhost:3306/student";
+	public static String password = "root";
+	public static String user = "root";
+	public static String query;
+	public static Scanner sc = new Scanner(System.in);
+	%>
+	
+	<%
+	try{
+		Class.forName(driver);
+		connection = DriverManager.getConnection(dburl,user,password);
+		statement = connection.createStatement();
+		
+		query = "select * from emp";
+		resultSet = statement.executeQuery(query);
+		
+	} catch (Exception e){
+		e.printStackTrace();
+	}
+	finally {
+		if(connection != null){
+			connection.close();
+		}
+		if(statement != null){
+			statement.close();
+		}
+		if(resultSet != null){
+			resultSet.close();
+		}
+	}
+	%>
+</body>
+</html>

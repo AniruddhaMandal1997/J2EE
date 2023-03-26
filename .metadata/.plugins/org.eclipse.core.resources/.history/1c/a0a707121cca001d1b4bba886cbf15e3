@@ -1,0 +1,50 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ page import="java.sql.*"%>
+<%@ page import = "java.util.*" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<%!
+	public  Connection connection;
+	public  Statement statement;
+	public  PreparedStatement preparedStatement;
+	public  int result;
+	public  ResultSet resultSet;
+	public  String driver = "com.mysql.cj.jdbc.Driver";
+	public  String dburl = "jdbc:mysql://localhost:3306/student";
+	public  String password = "root";
+	public  String user = "root";
+	public  String query;
+	public  Scanner sc = new Scanner(System.in);
+	%>
+	
+	<%
+	try{
+		Class.forName(driver);
+		connection = DriverManager.getConnection(dburl,user,password);
+		statement = connection.createStatement();
+		
+		query = "select * from song";
+		resultSet = statement.executeQuery(query);
+		
+	}
+	finally {
+		if(connection != null){
+			connection.close();
+		}
+		if(statement != null){
+			statement.close();
+		}
+		if(resultSet != null){
+			resultSet.close();
+		}
+	}
+	%>
+	<%= resultSet.getString(2) %>
+</body>
+</html>

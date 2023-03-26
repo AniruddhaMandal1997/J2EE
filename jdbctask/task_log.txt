@@ -1,0 +1,76 @@
+__________ SELECT OPERATION (EMP TABLE) ____________
+1. Show Table
+2. Insert data to database
+3. Update data of database
+4. Delete data from database
+5. Delete all data from databse
+6. Exit
+1
+1 || SMITH || 800 || CLERK
+2 || ALLEN || 1600 || SALESMAN
+3 || WARD || 1250 || SALESMAN
+4 || JONES || 2975 || MANAGER
+5 || MARTIN || 1250 || SALESMAN
+__________ SELECT OPERATION (EMP TABLE) ____________
+1. Show Table
+2. Insert data to database
+3. Update data of database
+4. Delete data from database
+5. Delete all data from databse
+6. Exit
+3
+-------- ENTER VALUES TO UPDATE ---------
+1. Update ID
+2. Update ENAME
+3. Update SAL
+4. Update JOB
+2
+Enter emp_ID and new_NAME
+2
+BLAKE
+Query OK. 1 row(s) affected
+1 || SMITH || 800 || CLERK
+2 || BLAKE || 1600 || SALESMAN
+3 || WARD || 1250 || SALESMAN
+4 || JONES || 2975 || MANAGER
+5 || MARTIN || 1250 || SALESMAN
+__________ SELECT OPERATION (EMP TABLE) ____________
+1. Show Table
+2. Insert data to database
+3. Update data of database
+4. Delete data from database
+5. Delete all data from databse
+6. Exit
+4
+------- Enter EMPID to delete data -------
+3
+Query OK. 1 row(s) affected
+1 || SMITH || 800 || CLERK
+2 || BLAKE || 1600 || SALESMAN
+4 || JONES || 2975 || MANAGER
+5 || MARTIN || 1250 || SALESMAN
+__________ SELECT OPERATION (EMP TABLE) ____________
+1. Show Table
+2. Insert data to database
+3. Update data of database
+4. Delete data from database
+5. Delete all data from databse
+6. Exit
+5
+Query OK. 0 row(s) affected
+__________ SELECT OPERATION (EMP TABLE) ____________
+1. Show Table
+2. Insert data to database
+3. Update data of database
+4. Delete data from database
+5. Delete all data from databse
+6. Exit
+1
+__________ SELECT OPERATION (EMP TABLE) ____________
+1. Show Table
+2. Insert data to database
+3. Update data of database
+4. Delete data from database
+5. Delete all data from databse
+6. Exit
+6

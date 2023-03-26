@@ -1,0 +1,5 @@
+package com.jspiders.servlet.servlets;
+
+public class MyServlet1 {
+
+}
